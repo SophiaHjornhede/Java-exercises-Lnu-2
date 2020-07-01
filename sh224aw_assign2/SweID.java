@@ -160,7 +160,7 @@ public class SweID {
                 OddSum = OddSum+n;
             }
 
-            //find the even digits of the numbers, each digit times two and if the result is bigger than 9, will minus 9, and calculate the even sum.
+        //find the even digits of the numbers, each digit times two and if the result is bigger than 9, will minus 9, and calculate the even sum.
         int EvenSum = 0;
             for(int j=8;j>=0;j=j-2){
                 int m = a[j];

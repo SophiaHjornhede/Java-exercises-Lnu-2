@@ -55,17 +55,15 @@ public class Pizza {
         Scanner scanner = new Scanner(System.in);  // Create a Scanner object
         String sizeChooseByUser = scanner.nextLine();  // Read user input
         String toUpper = sizeChooseByUser.toUpperCase(); //to ensure the user can input any letter cases
-        //System.out.println("sizeChosen: " + sizeChooseByUser);
-        //Pizza.Size pizzaSize = Pizza.Size.valueOf(toUpper);
+
         customPizza.setSize(toUpper);
         System.out.println("Please enter type of topping (cheese, pepperoni, ham): " + java.util.Arrays.asList(topping.values()));
         String toppingChooseByUser = scanner.nextLine();
         customPizza.setTopping(toppingChooseByUser.toUpperCase());
-        //Pizza.Topping topping = Pizza.Topping.valueOf(toppingChooseByUser.toUpperCase());
+
         System.out.println("Please enter number of toppings you want: ");
         String numberOfToppings = scanner.nextLine();
         this.numberOfToppings = Integer.parseInt(numberOfToppings);
-        //System.out.println("size: "+ size.toString());
 
         return customPizza;
     }
@@ -74,7 +72,6 @@ public class Pizza {
     public double calcCost(Pizza thePizza) {
 
         if (thePizza.size.equals(size.SMALL)) {
-            //System.out.println("The small one");
             return 10 + 3.0 * numberOfToppings;
         }
         if (thePizza.size.equals(size.MEDIUM)) {
