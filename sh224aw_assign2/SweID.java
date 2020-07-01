@@ -185,7 +185,7 @@ public class SweID {
             System.out.println("The control number is not correct.");
             return false;
         }
-        System.out.println("The control number is a correct.");
+        System.out.println("The control number is correct.");
         return true;
     }
 

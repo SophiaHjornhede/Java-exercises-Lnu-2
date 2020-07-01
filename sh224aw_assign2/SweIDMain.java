@@ -1,7 +1,5 @@
 package sh224aw_assign2;
 
-import java.util.Scanner;
-
 /**
  * Assignment-2, exercise-2, main class
  *
